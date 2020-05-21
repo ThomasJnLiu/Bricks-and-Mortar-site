@@ -1,0 +1,81 @@
+body{
+    width: 100%;
+    height: auto;
+    background-image: url("../img/BRICKSxMORTAR_wallpaper.jpg");
+    background-size: 200px, auto;
+    background-color: black;
+    color: floralwhite;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+}
+
+#wrapper{
+    width:80%;
+    height: auto;
+    margin: auto;
+    background-color: black;
+    padding:1em;
+}
+
+#logo{
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+nav{
+    width: 100%;
+    height: auto;
+    margin: 1em auto;
+    padding:1em 0;
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+a.menu{
+    display:block;
+}
+
+a.menu:link, a.menu:visited{
+    color:aquamarine;
+    text-decoration: none;
+}
+
+a.menu:hover, a.menu:active{
+    color:magenta;
+    text-decoration: underline;
+}
+
+.magenta{
+    color:magenta;
+}
+
+.smaller{
+    font-size: 0.8em;
+}
+
+footer{
+    width:100%;
+    background-color: floralwhite;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p, footer a{
+    width: 90%;
+    margin: auto;
+}
+
+footer a:hover, footer a:active{
+    color:black;
+    background-color:aquamarine
+}
+
+h3{
+    color:magenta;
+}
+
+h1{
+    color: aquamarine;
+}

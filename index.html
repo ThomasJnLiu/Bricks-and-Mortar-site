@@ -1,52 +1,46 @@
 <!-- Website created for Interactive Media: Web (GDES-3091), based on imaginary clothing shop BRICKSxMORTAR. -->
 <!-- By Thomas Liu -->
 
-<!DOCTYPE html>
- <!-- even though bgcolor is recommended, we already created a style attribute for fonts so might as well use the non-deprecated background-color parameter -->
-    <body style = "font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; background-color:black;">
-        <center>
-            <img src = "img/BRICKSxMORTAR_logo.png" alt = "Bricks and Mortar logo" width = "50%">
-        </center>
-        <!--alternate way of centering image using non-deprecated tags, implement later??-->
-        <!-- <div style = "text-align: center">
-            <img src = "img/BRICKSxMORTAR_logo.png">
-        </div> -->
-        <hr>
-        <center class = "nav" style = "color: #74eaa7;">
-            <a href = "#" style = "color: #74eaa7;">
-                OUR STORY
-            </a>
-            <br>
-            <a href = "#" style = "color: #74eaa7;">  
-                OUR SERVICES
-            </a>
-            <br>
-            <a href = "#" style = "color: #74eaa7;">
-                LOCATIONS
-            </a>
-            <br>
-            <a href = "faq.html" style = "color: #74eaa7;">
-                F.A.Q.
-            </a>
-        </center>
-        <hr>
-        <h3 style = "color: #ff26f1">
-            The mission of BRICKSxMORTAR is to transform how Canadians think about fashion.
-        </h3>  
-        <p style = "color: white">
-            For too long consumers have been forced to fit into a mould of one kind or another—assigned a size on an arbitrary scale of unrealistic and unhealthy beauty and body standards. In an over-sexualized and Photoshopped fashion market, we offer a different kind of clothing philosophy.
-            <br>
-            <br>
 
-            BRICKSxMORTAR strives to connect with the individual and to consult and create custom clothing for them with them in a collaborative manner. By doing so, our fashion studio endeavours to change consumers' perceptions of the current fashion landscape as well as their own views about their bodies and their fashion choices.
-            <br>
-            <br>
-            <i>What does it feel like to wear something especially  made for one's body rather than fitting one's body into a predetermined shape? We aim to answer this question a million times over as we help every client move towards a more comfortable version of themselves.</i>
-        </p>
-        <br>
-        <hr>
-        <center style = "color: white">       
-            ©BRICKSxMORTAR, inc. 2018-2020 // 1.888.708.9950  // <a href = "info@bricksxmortar.com" style = "color:#e346e3">info@bricksxmortar.com</a>
-        </center>
+<!DOCTYPE html>
+    <head>
+        <link href = "css/main.css" rel = "stylesheet">
+    </head>
+    <body>
+        <div id = "wrapper">
+            <header>
+                <img src = "img/BRICKSxMORTAR_logo.png" alt = "Bricks and Mortar logo" id = "logo">
+                <nav>
+                    <a class = "menu" href = "#">OUR STORY</a>
+                    <a class = "menu" href = "#">  OUR SERVICES</a>   
+                    <a class = "menu" href = "#">LOCATIONS</a>
+                    <a class = "menu" href = "faq.html">F.A.Q.</a>
+                </nav>
+            </header>
+
+            <div id = "mission">
+                <h3 class = "magenta">
+                    The mission of BRICKSxMORTAR is to transform how Canadians think about fashion.
+                </h3>  
+                <p>
+                    For too long consumers have been forced to fit into a mould of one kind or another—assigned a size on an arbitrary scale of unrealistic and unhealthy beauty and body standards. In an over-sexualized and Photoshopped fashion market, we offer a different kind of clothing philosophy.
+                    <br>
+                    <br>
+
+                    BRICKSxMORTAR strives to connect with the individual and to consult and create custom clothing for them with them in a collaborative manner. By doing so, our fashion studio endeavours to change consumers' perceptions of the current fashion landscape as well as their own views about their bodies and their fashion choices.
+                    <br>
+                    <br>
+                    <i>What does it feel like to wear something especially  made for one's body rather than fitting one's body into a predetermined shape? We aim to answer this question a million times over as we help every client move towards a more comfortable version of themselves.</i>
+                </p>
+                <!-- end of #mission -->
+            </div>
+
+            <footer>
+                <p class = "magenta smaller">       
+                    ©BRICKSxMORTAR, inc. 2018-2020 // 1.888.708.9950  // <a>info@bricksxmortar.com</a>
+                </p>
+            </footer>
+        <!-- end of #wrapper -->
+        </div>
     </body>
 </html>
