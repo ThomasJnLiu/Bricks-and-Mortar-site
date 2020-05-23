@@ -60,6 +60,7 @@ footer{
     background-color: floralwhite;
     text-align: center;
     padding: 1em 0;
+    clear:both;
 }
 
 footer p, footer a{
@@ -78,4 +79,12 @@ h3{
 
 h1{
     color: aquamarine;
+}
+
+.floatLeft{
+    float:left;
+}
+
+.floatRight{
+    float:right;
 }
