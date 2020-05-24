@@ -49,6 +49,7 @@ nav{
 
 a.menu{
     display:block;
+    transition: color 0.3s;
 }
 
 a.menu:link, a.menu:visited{
@@ -58,7 +59,7 @@ a.menu:link, a.menu:visited{
 
 a.menu:hover, a.menu:active{
     color:magenta;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .magenta{
@@ -75,8 +76,13 @@ footer{
     text-align: center;
     padding: 1em 0;
     clear:both;
+    opacity: 0.7;
+    transition: opacity 0.5s;
 }
 
+footer:hover{
+    opacity:1;
+}
 footer p, footer a{
     width: 90%;
     margin: auto;
