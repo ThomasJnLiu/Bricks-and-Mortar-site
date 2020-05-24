@@ -1,3 +1,13 @@
+@font-face{
+    font-family: 'agenda';
+    src: url('../type.agenda_medium.woff2')
+    format('woff2'),
+        url('../type/agenda_medium.woff')
+        format('woff');
+    font-weight:normal;
+    font-style:normal;
+}
+
 body{
     width: 100%;
     height: auto;
@@ -129,4 +139,3 @@ header:hover p{
     cursor:pointer;
 }
 
-    
