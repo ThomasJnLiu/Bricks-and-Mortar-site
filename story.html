@@ -1,0 +1,127 @@
+<!-- Website created for Interactive Media: Web (GDES-3091), based on imaginary clothing shop BRICKSxMORTAR. -->
+<!-- By Thomas Liu -->
+
+
+<!DOCTYPE html>
+    <head>
+        <link href = "css/main.css" rel = "stylesheet">
+
+        <style>
+            #aquaCouple{
+                width:50%;
+                height:auto;
+                min-width:200px;
+                max-width:500px;
+                margin:1em;
+            }
+            #pinkKimono{
+                width:50%;
+                height:auto;
+                min-width:300px;
+                max-width:800px;
+                margin:1em;
+            }
+            h3{
+                font-family:agenda;
+                font-size:1.8em;
+                animation: strobe 3s ease-in infinite;
+            }
+
+            @keyframes strobe {
+                    0%{
+                        color:floralwhite;
+                    }
+                    50%{
+                        color:magenta;
+                    }
+                    100%{
+                        color:white;
+                    }
+                }
+
+            #threading{
+                display:block;
+                margin:auto;
+                max-width:720px;
+            }
+
+            #audioButton{
+                width:2em;
+                height:auto;
+                position:fixed;
+                margin-top:1em;
+                margin-left:10%;
+                z-index: 2;
+                transition: width 1s;
+            }
+
+            #audioButton:hover{
+                cursor:pointer;
+                width:2.5em;
+                background:magenta;
+                border-radius:30px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <audio id = "music" true>
+            <source src = "audio/BBNG_Camel.mp3" type = "audio/mpeg"/>
+            <source src = "audio/BBNG_Camel.ogg" type = "audio/ogg"/>
+            <source src = "audio/BBNG_Camel.wav" type="audio/wav"/>
+        </audio>
+        <img src = "img/sound-btn-OFF.png" id = "audioButton" onclick = "playMusic()"/>
+        <div id = "banner">
+            <img src = "img/BRICKSxMORTAR_logo.png" id = "logo">
+        </div>
+
+        <div id = "wrapper">
+            <header>
+                <p>menu</p>
+                <nav>
+                    <a class = "menu" href = "#">OUR STORY</a>
+                    <a class = "menu" href = "#">  OUR SERVICES</a>   
+                    <a class = "menu" href = "#">LOCATIONS</a>
+                    <a class = "menu" href = "faq.html">F.A.Q.</a>
+                </nav>
+            </header>
+
+            <div id = "main">
+                <h1>OUR STORY</h1>
+
+                <video controls loop width = "100%" height = "auto" preload="auto" id = "threading">
+                    <source src = "video/threading.mp4" type = "video/mp4"/>
+                    <source src = "video/threading.ogv" type = "video/ogg"/>
+                </video>
+                <h3>Where it all started</h3>
+                <p>
+                Aliquam vel odio magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean laoreet urna eget dui rutrum tincidunt. Maecenas elementum, ante vel varius faucibus, elit eros faucibus diam, vel rutrum lacus sem eget velit. Praesent posuere vel tellus aliquam pulvinar. Curabitur sed pulvinar urna, et commodo mi. Praesent pulvinar, est id porta scelerisque.</p>
+
+                <h3>Finding a common space (physically + philosophically)</h3>
+                <p>Etiam magna quam, condimentum ac ipsum ut, hendrerit vehicula quam. Integer ac dapibus ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut posuere a ex et blandit. Proin malesuada felis turpis, a dignissim urna aliquam at. Nullam cursus ullamcorper sapien quis pellentesque. Morbi porttitor egestas massa at lobortis. Donec fermentum neque a augue vulputate venenatis. Donec auctor tempor suscipit. Fusce tortor tellus, eleifend eget mi nec, dapibus gravida turpis. Etiam blandit suscipit lorem vitae consectetur. Suspendisse commodo lacinia ultricies. </p>
+                <!-- end of #mission -->
+            </div>
+
+            <footer>
+                <p class = "magenta smaller">       
+                    ©BRICKSxMORTAR, inc. 2018-2020 // 1.888.708.9950  // <a class = "magenta" href = "info@bricksxmortar.com">info@bricksxmortar.com</a>
+                </p>
+            </footer>
+        <!-- end of #wrapper -->
+        </div>
+    </body>
+
+    <script type = "text/javascript">
+        var audioButton = document.getElementById("audioButton");
+        var music = document.getElementById("music");
+        function playMusic(){
+            if(music.paused == true){
+                music.play();
+                audioButton.src = "img/sound-btn-ON.png";
+            }else{
+                music.pause();
+                audioButton.src = "img/sound-btn-OFF.png";
+            }
+        }
+    </script>
+</html>
