@@ -1,7 +1,0 @@
-<h1>OUR STORY</h1>
-<h3>Where it all started</h3>
-<p>
-Aliquam vel odio magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean laoreet urna eget dui rutrum tincidunt. Maecenas elementum, ante vel varius faucibus, elit eros faucibus diam, vel rutrum lacus sem eget velit. Praesent posuere vel tellus aliquam pulvinar. Curabitur sed pulvinar urna, et commodo mi. Praesent pulvinar, est id porta scelerisque.</p>
-
-<h3>Finding a common space (physically + philosophically)</h3>
-<p>Etiam magna quam, condimentum ac ipsum ut, hendrerit vehicula quam. Integer ac dapibus ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut posuere a ex et blandit. Proin malesuada felis turpis, a dignissim urna aliquam at. Nullam cursus ullamcorper sapien quis pellentesque. Morbi porttitor egestas massa at lobortis. Donec fermentum neque a augue vulputate venenatis. Donec auctor tempor suscipit. Fusce tortor tellus, eleifend eget mi nec, dapibus gravida turpis. Etiam blandit suscipit lorem vitae consectetur. Suspendisse commodo lacinia ultricies. </p>
