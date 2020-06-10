@@ -1,0 +1,38 @@
+.slick{
+    width:50%;
+    height:auto;
+    min-width:200px;
+    max-width:500px;
+    margin:1.5em;
+    position: relative;
+    top: -1em;
+}
+
+.slider{
+    width:100%;
+    height:auto;
+}
+#pinkKimono{
+    width:50%;
+    height:auto;
+    min-width:300px;
+    max-width:800px;
+    margin:1em;
+}
+h3{
+    font-family:agenda;
+    font-size:1.8em;
+    animation: strobe 3s ease-in infinite;
+}
+
+@keyframes strobe {
+        0%{
+            color:floralwhite;
+        }
+        50%{
+            color:magenta;
+        }
+        100%{
+            color:white;
+        }
+    }

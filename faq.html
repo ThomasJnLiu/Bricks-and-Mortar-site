@@ -1,6 +1,44 @@
 <!DOCTYPE html>
     <head>
         <link href = "css/main.css" rel = "stylesheet">
+        <script type = "text/javascript" src = "scripts/jquery-3.5.1.min.js"></script>
+        <script type = "text/javascript" src = "scripts/jquery-ui-1.12.1/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+        <script type = "text/javascript">
+            $(document).ready(function(){
+                $("header p").click(function(){
+                    $("nav").toggleClass("slideDown");
+                });
+
+               $("h3+p").hide();
+
+               $("h3:nth-of-type(1)").click(function(){
+                $("h3:nth-of-type(1)+p").toggle("drop");
+               });
+
+               $("h3:nth-of-type(2)").click(function(){
+                $("h3:nth-of-type(2)+p").toggle("drop");
+               });
+
+               $("h3:nth-of-type(3)").click(function(){
+                $("h3:nth-of-type(3)+p").toggle("drop");
+               });
+
+               $("h3:nth-of-type(4)").click(function(){
+                $("h3:nth-of-type(4)+p").toggle("drop");
+               });
+            });
+        </script>
+
+        <style>
+            h3.magenta:hover, h3.magenta:active{
+                cursor: pointer;
+                background-color: aquamarine;
+
+            }
+        </style>
     </head>
 
     <body>
@@ -21,19 +59,19 @@
             <div id = "faq">
                 <h1>F.A.Q.</h1>
 
-                <h3>Do I need to make an appointment, or can I walk right in?</h3>  
+                <h3 class = "magenta">Do I need to make an appointment, or can I walk right in?</h3>  
                 <p>
-                    While our physical locations are open to the public to come in and explore our galleries, we do ask that you call or e-mail ahead of time if you're interested in a design consultation or a fitting. Just send us your name, a number we can reach you with, and a preferred date and time, using the e-mail link at the bottom of the page.
+                    While our physical locations are open to the public to come in and explore <a class = "definition" href = "#def1" rel = "modal:open">our galleries</a>, we do ask that you call or e-mail ahead of time if you're interested in a design consultation or a fitting. Just send us your name, a number we can reach you with, and a preferred date and time, using the e-mail link at the bottom of the page.
                 </p>
-                <h3>Do I need to have my own fabric and materials picked out ahead of time?</h3>
+                <h3 class = "magenta">Do I need to have my own fabric and materials picked out ahead of time?</h3>
                 <p>
                     No, that's all part of the fun and the customer experience. One of our talented designers will be happy to walk you through fabric samples, make recommendations, and place orders on your behalf for everything you need to create the perfect custom look.
                 </p>
-                <h3>Do you make men's clothing?</h3>
+                <h3 class = "magenta">Do you make men's clothing?</h3>
                 <p>
                     Yes, we make clothing for all expressions of gender, whether that's cis-gendered men and women or a more androgynous look. We want clothing to be comfortable for our clients physically, emotionally and psychologically.
                 </p>
-                <h3>What if I can't pay for everything up front?</h3>
+                <h3 class = "magenta">What if I can't pay for everything up front?</h3>
                 <p>
                     We know that custom clothing can be expensive, but it's also an investment in you. That's why we're more than willing to work with you to devise a payment plan for your custom outfit. We offer 2, 4 and 6-month instalment plans as well as free consultations for low-income and precarious workers.
                 </p>
@@ -46,6 +84,11 @@
                 </p>      
             </footer>
              <!-- end of #wrapper -->
+        </div>
+
+        <div id = "def1" class = "modal">
+            <p>`<strong>What Do We Mean By Galleries?</strong><br/><br/>
+                While we do sell a limited array of items off the rack, the majority of the clothes that we make are custom-to-order. So, we do not have stock to fill the shelves per se, let alone multiples of items in differnet sizes. Instead, what you'll find when you arrive is a curated collection of our best work displayed on mannequins of many different sizes and shapes.</p>
         </div>
     </body>
 </html>
