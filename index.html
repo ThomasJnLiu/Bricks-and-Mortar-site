@@ -31,6 +31,11 @@
                     dots:true,
 
                 });
+
+                $("#hamburger").click(function(){
+                    $(this).toggleClass("change");
+                    $("nav").toggleClass("slideDownFurther");
+                });
             });
 
             $(window).scroll(function(){
@@ -43,6 +48,12 @@
     
     <body>
         <div id = "banner">
+            <div id = "hamburger">
+                <div id = "bar1"></div>
+                <div id = "bar2"></div>
+                <div id = "bar3"></div>
+            </div>
+
             <img src = "img/BRICKSxMORTAR_logo.png" id = "logo">
         </div>
 

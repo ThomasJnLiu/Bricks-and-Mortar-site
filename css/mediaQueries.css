@@ -18,6 +18,18 @@
     header p {
         display: none;
     }
+
+    #audioButton{
+        width:35px;
+        top:1em;
+        margin-left:85%;
+    }
 }
 
 
+@media screen and (min-width:641px) {
+    #hamburger{
+        display:none;
+    }
+
+}

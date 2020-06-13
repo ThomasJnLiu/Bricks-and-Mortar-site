@@ -1,11 +1,13 @@
 <!DOCTYPE html>
     <head>
-        <link href = "css/main.css" rel = "stylesheet">
+        <link href = "css/main.css" rel = "stylesheet"/>
         <script type = "text/javascript" src = "scripts/jquery-3.5.1.min.js"></script>
         <script type = "text/javascript" src = "scripts/jquery-ui-1.12.1/jquery-ui.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
         <link rel = "stylesheet" href = "css/mediaQueries.css"/>
+        <script type = "text/javascript" src = "scripts/jquery-3.5.1.min.js"></script>
+        <script type = "text/javascript" src = "scripts/jquery-ui-1.12.1/jquery-ui.js"></script>
 
         <script type = "text/javascript">
             $(document).ready(function(){
@@ -30,6 +32,11 @@
                $("h3:nth-of-type(4)").click(function(){
                 $("h3:nth-of-type(4)+p").toggle("drop");
                });
+
+            $("#hamburger").click(function(){
+                    $(this).toggleClass("change");
+                    $("nav").toggleClass("slideDownFurther");
+                });
             });
         </script>
 
@@ -44,6 +51,11 @@
 
     <body>
         <div id = "banner">
+            <div id = "hamburger">
+                <div id = "bar1"></div>
+                <div id = "bar2"></div>
+                <div id = "bar3"></div>
+            </div>
             <img src = "img/BRICKSxMORTAR_logo.png" id = "logo">
         </div>
         <div id = "wrapper">
