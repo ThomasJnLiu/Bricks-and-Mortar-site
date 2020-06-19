@@ -3,6 +3,8 @@
 
 
 <!DOCTYPE html>
+
+<html>
     <head>
         <link href = "css/main.css" rel = "stylesheet"/>
         <link href = "css/story.css" rel = "stylesheet"/>
@@ -16,6 +18,16 @@
                     $(this).toggleClass("change");
                     $("nav").toggleClass("slideDownFurther");
                 });
+
+                $("header p").click(function(){
+                    $("nav").toggleClass("slideDown");
+                });
+            });
+
+            $(window).scroll(function(){
+                $("header").stop().animate({
+                    top: $(document).scrollTop()
+                    }, 'slow');
             });
             </script>
     </head>
@@ -40,7 +52,7 @@
             <header>
                 <p>menu</p>
                 <nav>
-                    <a class = "menu" href = "#">OUR STORY</a>
+                    <a class = "menu" href = "story.html">OUR STORY</a>
                     <a class = "menu" href = "#">  OUR SERVICES</a>   
                     <a class = "menu" href = "#">LOCATIONS</a>
                     <a class = "menu" href = "faq.html">F.A.Q.</a>

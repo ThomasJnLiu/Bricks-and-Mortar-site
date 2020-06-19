@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
     <head>
         <link href = "css/main.css" rel = "stylesheet"/>
         <script type = "text/javascript" src = "scripts/jquery-3.5.1.min.js"></script>
@@ -38,6 +39,12 @@
                     $("nav").toggleClass("slideDownFurther");
                 });
             });
+
+            $(window).scroll(function(){
+                $("header").stop().animate({
+                    top: $(document).scrollTop()
+                    }, 'slow');
+            });
         </script>
 
         <style>
@@ -63,7 +70,7 @@
                 <p>menu</p>
                 <nav>
                     <a class = "menu" href = "index.html">OUR MISSION</a>
-                    <a class = "menu" href = "#">  OUR STORY</a>   
+                    <a class = "menu" href = "story.html">  OUR STORY</a>   
                     <a class = "menu" href = "#">SERVICES</a>
                     <a class = "menu" href = "faq.html">LOCATIONS</a>
                 </nav>
